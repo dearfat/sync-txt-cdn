@@ -1,0 +1,6 @@
+template_config:
+  source_dir: "../bookH5/dist"
+  output_dir: "../bookH5/dist"
+  segmentation: "<!--data-source-->"
+  file_name: "readers.html"
+  url: "http://localhost:8080"

@@ -1,0 +1,8 @@
+template_config:
+  # source_dir: "../bookH5/dist"
+  source_dir: "/var/www/novellettes.com/"
+  # output_dir: "../bookH5/dist"
+  output_dir: "/var/www/novellettes.com/"
+  segmentation: "<!--data-source-->"
+  file_name: "readers.html"
+  url: "http://localhost:8080"
