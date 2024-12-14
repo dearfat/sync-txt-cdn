@@ -175,7 +175,7 @@ impl  TemplateConfigData {
 	}
 
 	pub async  fn with_req_data(mut self,client:&Client,url:&str)->Result<Self>{
-		let local_url = &format!("{}/api/v1/chapter/{}/{}",url ,&self.book_id , &self.chapter_id);
+		let local_url = &format!("{}/api/v1/chapter/{}/{}?app_id={}&uuid={}",url ,&self.book_id , &self.chapter_id,"novellettes","8413d93a-1512-4cca-b9e3-5ea520c71240");
 		let url = Url::parse(&local_url)?;
 		info!("Fetching data from {:?}",url);
 		let resp = client.get(url).send().await?;
